@@ -155,7 +155,7 @@
         },
         "extensionKey": "beer",
         "name": "MOC Extbase beer",
-        "originalExtensionKey": "",
+        "originalExtensionKey": "beer",
         "persons": [
             {
                 "company": "MOC A\/S",
@@ -198,7 +198,7 @@
         }
     ],
     "log": {
-        "last_modified": "2014-12-17 11:54",
+        "last_modified": "2014-12-17 04:48",
         "extension_builder_version": "6.2.0",
         "be_user": " (4)"
     }

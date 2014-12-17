@@ -1,16 +1,6 @@
-
+{namespace beer=MOC\Beer\ViewHelpers}
 <f:layout name="Default" />
 
-This Template is responsible for creating a table of domain objects.
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        List.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
 <h1>Listing for Beer</h1>
@@ -28,7 +18,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 	<f:for each="{beers}" as="beer">
 		<tr>
 			<td><f:link.action action="show" arguments="{beer : beer}"> {beer.alcoholByVolume}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{beer : beer}"> {beer.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{beer : beer}"> <beer:BeerTitle beer="{beer}" /></f:link.action></td>
 			<td><f:link.action action="edit" arguments="{beer : beer}">Edit</f:link.action></td>
 			<td><f:link.action action="delete" arguments="{beer : beer}">Delete</f:link.action></td>
 		</tr>

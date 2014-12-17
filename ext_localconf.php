@@ -9,12 +9,11 @@ if (!defined('TYPO3_MODE')) {
 	array(
 		'Beer' => 'list, show',
 		'Brewery' => 'list, show',
-		
+
 	),
 	// non-cacheable actions
 	array(
-		'Beer' => '',
-		'Brewery' => '',
-		
+			'Beer' => 'list, show',
+			'Brewery' => 'list, show',
 	)
 );

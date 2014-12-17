@@ -49,6 +49,12 @@ class Beer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $name = '';
 
 	/**
+	 * @var \MOC\Beer\Domain\Model\Brewery
+	 * @lazy
+	 */
+	protected $brewery;
+
+	/**
 	 * Returns the alcoholByVolume
 	 *
 	 * @return float $alcoholByVolume
@@ -84,6 +90,21 @@ class Beer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setName($name) {
 		$this->name = $name;
+	}
+
+	/**
+	 * @return Brewery
+	 */
+	public function getBrewery() {
+		return $this->brewery;
+	}
+
+	/**
+	 * @param Brewery $brewery
+	 * @return void
+	 */
+	public function setBrewery($brewery) {
+		$this->brewery = $brewery;
 	}
 
 }

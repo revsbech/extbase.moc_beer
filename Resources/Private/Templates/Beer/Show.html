@@ -13,8 +13,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Beer</h1>
-
+<h1>Single View for Beer:{beer.name}</h1>
 <f:flashMessages renderMode="div" />
 <f:render partial="Beer/Properties" arguments="{beer:beer}" />
 <f:link.action action="list">Back to list</f:link.action><br />

@@ -9,13 +9,13 @@ $GLOBALS['TCA']['tx_beer_domain_model_beer'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, alcohol_by_volume, name',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, alcohol_by_volume, name, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, alcohol_by_volume, name, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime, brewery'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
 	),
 	'columns' => array(
-	
+
 		'sys_language_uid' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
@@ -56,7 +56,7 @@ $GLOBALS['TCA']['tx_beer_domain_model_beer'] = array(
 				'max' => 255,
 			)
 		),
-	
+
 		'hidden' => array(
 			'exclude' => 1,
 			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -115,10 +115,16 @@ $GLOBALS['TCA']['tx_beer_domain_model_beer'] = array(
 				'eval' => 'trim,required'
 			),
 		),
-		
 		'brewery' => array(
+			'exclude' => 1,
+			'label' => 'Brewery',
 			'config' => array(
-				'type' => 'passthrough',
+				'type' => 'select',
+				'foreign_table' => 'tx_beer_domain_model_brewery',
+				'foreign_table_where' => '1=1',
+				'size' => 1,
+				'minitems' => 1,
+				'maxitems' => 1,
 			),
 		),
 	),
