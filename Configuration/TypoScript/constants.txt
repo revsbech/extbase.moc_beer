@@ -1,0 +1,30 @@
+
+plugin.tx_beer {
+	view {
+		# cat=plugin.tx_beer/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:beer/Resources/Private/Templates/
+		# cat=plugin.tx_beer/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:beer/Resources/Private/Partials/
+		# cat=plugin.tx_beer/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:beer/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_beer//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+module.tx_beer {
+	view {
+		# cat=module.tx_beer/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:beer/Resources/Private/Backend/Templates/
+		# cat=module.tx_beer/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:beer/Resources/Private/Backend/Partials/
+		# cat=module.tx_beer/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:beer/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_beer//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

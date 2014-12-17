@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-12-17T11:54:01Z" product-name="beer">
+		<header/>
+		<body>
+			<trans-unit id="tx_beer_domain_model_beer">
+				<source>Beer</source>
+			</trans-unit>
+			<trans-unit id="tx_beer_domain_model_beer.alcohol_by_volume">
+				<source>Alcohol By Volume</source>
+			</trans-unit>
+			<trans-unit id="tx_beer_domain_model_beer.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_beer_domain_model_brewery">
+				<source>Brewery</source>
+			</trans-unit>
+			<trans-unit id="tx_beer_domain_model_brewery.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_beer_domain_model_brewery.beers">
+				<source>Beers</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
